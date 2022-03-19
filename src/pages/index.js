@@ -5,6 +5,7 @@ import theme from "../components/theme/Theme";
 import { Header } from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
+import Services from "../components/services/Services";
 
 // markup
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <Header></Header>
       <Hero></Hero>
+      <Services></Services>
       <Footer></Footer>
     </ThemeProvider>
   );
