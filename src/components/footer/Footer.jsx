@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "../../images/Flame_logo_white.png";
 import { Col, Container, FooterContainer, Heading, Row } from "../theme/Theme";
 import HandleMediaQuery from "../handleMediaQuery/HandleMediaQuery";
+import './footer.css';
 
 const Footerli = styled.li`
   color: ${(props) => props.theme.colors.text};
@@ -11,20 +12,20 @@ const Footerli = styled.li`
 
 
 const Footer = () => {
-  let mobileScreen = HandleMediaQuery();
   return (
     <FooterContainer>
       <Container>
         <Row>
-          <Col>
+          <Col className="footer-col">
             <img
               src={logo}
-              width={50}
-              height={"auto"}
+              width={100}
+              height={100}
+              style={{objectFit:"contain"}}
               alt="Emberwind studios logo"
             ></img>
           </Col>
-          <Col>
+          <Col className="footer-col">
             <Heading>Navigation</Heading>
             <ul>
               <Footerli>Home</Footerli>
@@ -33,7 +34,16 @@ const Footer = () => {
               <Footerli>Contact Us</Footerli>
             </ul>
           </Col>
-          <Col>
+          <Col className="footer-col">
+            <Heading>Navigation</Heading>
+            <ul>
+              <Footerli>hello</Footerli>
+              <Footerli>hello</Footerli>
+              <Footerli>hello</Footerli>
+              <Footerli>hello</Footerli>
+            </ul>
+          </Col>
+          <Col className="footer-col">
             <Heading>Navigation</Heading>
             <ul>
               <Footerli>hello</Footerli>

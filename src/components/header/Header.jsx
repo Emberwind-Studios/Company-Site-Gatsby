@@ -17,14 +17,12 @@ const Li = styled.li`
 `;
 
 const Link = styled.a`
-  text-decoration:none;
-  transition:.2s ease-in; 
-  color:white;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  color: white;
   :hover {
-    color:${(props) => props.theme.colors.primary};
-    transition:.2s ease-in; 
+    color: black;
   }
-
 `;
 
 const MobileMenu = styled.div`
@@ -60,16 +58,24 @@ export const Header = (props) => {
       <Row style={mobileScreen ? { alignItems: "flex-end" } : {}}>
         <Nav style={mobileScreen ? { display: "none" } : {}}>
           <Ul>
-            <Li><Link href="/">Home</Link></Li>
-            <Li><Link href="/about">About us</Link></Li>
+            <Li>
+              <Link href="/">Home</Link>
+            </Li>
+            <Li>
+              <Link href="/about">About us</Link>
+            </Li>
             <img
               src={logo}
               width={50}
               height={"auto"}
               alt="Emberwind studios logo"
             ></img>
-            <Li>Services</Li>
-            <Li>Contact us</Li>
+            <Li>
+              <Link href="/services">Services</Link>
+            </Li>
+            <Li>
+              <Link href="/contact">Contact Us</Link>
+            </Li>
           </Ul>
         </Nav>
         <Col
