@@ -4,8 +4,9 @@ const theme = {
   colors: {
     text: "#fff",
     background: "#fff",
-    primary: "#7A93D2",
+    primary: "#526492",
     secondary: "#ff6347",
+    success: "#7A93D2",
     footer: "#36454F",
   },
   fonts: {

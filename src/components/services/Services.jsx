@@ -1,27 +1,38 @@
-import React from 'react'
-import { Container, Row, Col } from '../theme/Theme'
+import React from "react";
+import { Container, Row, Col } from "../theme/Theme";
 import styled from "styled-components";
+import "./services.css";
+import CardImage from "../../images/Cardlogothinker.png";
+import { servicesVersion } from "typescript";
 
 const Card = styled.div`
-width:200px;
-height:200px;
-border:1px solid black;
-padding:5px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-border-radius:5px;
-
-`
+  width: 400px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+`;
 
 const Services = () => {
   return (
-    <Container style={{border:'1px solid black'}}>
-        <Row>
-            <Col><Card></Card></Col>
-            <Col>hello</Col>
-            <Col>hello</Col>
-        </Row>
+    <Container className='services-con'>
+      <Row>
+        <Col className="services-col">
+          <Card>
+            <img src={CardImage} className='card-image'></img>
+          </Card>
+        </Col>
+        <Col className="services-col">
+          <Card>
+            <img src={CardImage} className='card-image'></img>
+          </Card>
+        </Col>
+        <Col className="services-col">
+          <Card>
+            <img src={CardImage} className='card-image'></img>
+          </Card>
+        </Col>
+      </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -1,3 +1,13 @@
-.services-container{
-    border:1px solid black;
+.services-con {
+    padding-top: 300px
+}
+
+.services-col {
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
 }
