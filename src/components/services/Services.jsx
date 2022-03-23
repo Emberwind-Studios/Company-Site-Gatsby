@@ -13,6 +13,7 @@ const Card = styled.div`
 
 const Services = () => {
   return (
+    <>
     <Container className='services-con'>
       <Row>
         <Col className="services-col">
@@ -32,7 +33,29 @@ const Services = () => {
         </Col>
       </Row>
     </Container>
+
+    <Container className='services-con'>
+    <Row>
+      <Col className="services-col">
+        <Card>
+          <img src={CardImage} className='card-image'></img>
+        </Card>
+      </Col>
+      <Col className="services-col">
+        <Card>
+          <img src={CardImage} className='card-image'></img>
+        </Card>
+      </Col>
+      <Col className="services-col">
+        <Card>
+          <img src={CardImage} className='card-image'></img>
+        </Card>
+      </Col>
+    </Row>
+  </Container>
+  </>
   );
 };
+
 
 export default Services;
