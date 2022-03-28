@@ -2,7 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "../theme/Theme";
 import styled from "styled-components";
 import "./services.css";
-import CardImage from "../../images/Cardlogothinker.png";
+import HostLogo from "../../images/card-images/hosting-logo.png";
+import WebDLogo from "../../images/card-images/web-development-logo.png"
+import AppDLogo from "../../images/card-images/app-development-logo.png"
+import EcLogo from "../../images/card-images/ecommerce-logo.png"
+import GraphLogo from "../../images/card-images/graphic-design-logo.png"
+import MaintLogo from "../../images/card-images/maintenance-logo.png"
 import { servicesVersion } from "typescript";
 
 const Card = styled.div`
@@ -18,17 +23,17 @@ const Services = () => {
       <Row>
         <Col className="services-col">
           <Card>
-            <img src={CardImage} className='card-image'></img>
+            <img src={WebDLogo} className='card-image'></img>
           </Card>
         </Col>
         <Col className="services-col">
           <Card>
-            <img src={CardImage} className='card-image'></img>
+            <img src={AppDLogo} className='card-image'></img>
           </Card>
         </Col>
         <Col className="services-col">
           <Card>
-            <img src={CardImage} className='card-image'></img>
+            <img src={EcLogo} className='card-image'></img>
           </Card>
         </Col>
       </Row>
@@ -38,17 +43,17 @@ const Services = () => {
     <Row>
       <Col className="services-col">
         <Card>
-          <img src={CardImage} className='card-image'></img>
+          <img src={GraphLogo} className='card-image'></img>
         </Card>
       </Col>
       <Col className="services-col">
         <Card>
-          <img src={CardImage} className='card-image'></img>
+          <img src={HostLogo} className='card-image'></img>
         </Card>
       </Col>
       <Col className="services-col">
         <Card>
-          <img src={CardImage} className='card-image'></img>
+          <img src={MaintLogo} className='card-image'></img>
         </Card>
       </Col>
     </Row>
