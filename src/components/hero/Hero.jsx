@@ -63,9 +63,9 @@ const Hero = () => {
           <Col>
             <img
               src={bubbles}
-              width={500}
+              width={"100%"}
               height={"auto"}
-              style={{ padding: 50, objectFit: "cover" }}
+              style={{ objectFit: "cover" }}
               alt="Bubbles "
             ></img>
           </Col>
@@ -86,6 +86,7 @@ const Hero = () => {
             </SubText>
             <ButtonContainer>
               <Button>Request A Quote</Button>
+              <Button>See Services</Button>
             </ButtonContainer>
           </Col>
         </Row>

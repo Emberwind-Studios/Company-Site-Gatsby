@@ -85,7 +85,7 @@ export const Heading = styled.h1`
 export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: row;
-  margin-top: 50%;
+  margin-top: 20%;
   padding: 5%;
   background-color: ${theme.colors.primary};
 `;
