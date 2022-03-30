@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../../images/Flame_logo_white.png";
 import { Col, Container, FooterContainer, Heading, Row } from "../theme/Theme";
-import HandleMediaQuery from "../handleMediaQuery/HandleMediaQuery";
 import './footer.css';
 
 const Footerli = styled.li`

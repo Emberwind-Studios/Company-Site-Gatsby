@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import "@fontsource/roboto/500.css" 
+import "@fontsource/open-sans"
+import "@fontsource/actor"
 
 const theme = {
   colors: {
@@ -6,12 +9,13 @@ const theme = {
     background: "#fff",
     primary: "#526492",
     secondary: "#ff6347",
+    heading: "#454040",
     success: "#7A93D2",
     footer: "#36454F",
   },
   fonts: {
-    body: "system-ui, sans-serif",
-    heading: "Roboto",
+    body: "Poppins, sans-serif",
+    heading: "Roboto, sans-serif",
     monospace: "Menlo, monospace",
   },
   fontWeights: {
@@ -81,7 +85,7 @@ export const Heading = styled.h1`
 export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: row;
-  margin-top: 100%;
+  margin-top: 50%;
   padding: 5%;
   background-color: ${theme.colors.primary};
 `;

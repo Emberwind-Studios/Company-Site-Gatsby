@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import theme, { Container, Nav, Ul, Row, Col } from "../theme/Theme";
+import { Container, Nav, Ul, Row, Col } from "../theme/Theme";
 import logo from "../../images/Flame_logo_white.png";
 import HandleMediaQuery from "../handleMediaQuery/HandleMediaQuery";
-import { BsFillMoonFill } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { ThemeContext } from "styled-components";
 
