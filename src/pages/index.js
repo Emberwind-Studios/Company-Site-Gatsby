@@ -6,6 +6,7 @@ import { Header } from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Services from "../components/services/Services";
+import FadeInAnimation from "../assets/js/FadeInAnimation";
 
 // markup
 const IndexPage = () => {
@@ -13,7 +14,9 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <Header></Header>
       <Hero></Hero>
-      <Services></Services>
+      <FadeInAnimation>
+        <Services></Services>
+      </FadeInAnimation>
       <Footer></Footer>
     </ThemeProvider>
   );

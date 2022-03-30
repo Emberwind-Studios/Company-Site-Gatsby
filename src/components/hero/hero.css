@@ -1,7 +1,8 @@
 .hero-container{
     background-image: url('../../images/background-wave.png');
-    height:100%;
+    background-size: cover;
     background-position:bottom;
-    padding-bottom:5%;
+    background-repeat: none;
+    padding-bottom:10%;
 
 }
