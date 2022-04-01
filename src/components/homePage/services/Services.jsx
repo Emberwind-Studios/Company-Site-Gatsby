@@ -1,13 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "../theme/Theme";
+import { Container, Row, Col } from "../../global/theme/Theme";
 import styled from "styled-components";
 import "./services.css";
-import HostLogo from "../../images/card-images/hosting-logo.png";
-import WebDLogo from "../../images/card-images/web-development-logo.png";
-import AppDLogo from "../../images/card-images/app-development-logo.png";
-import EcLogo from "../../images/card-images/ecommerce-logo.png";
-import GraphLogo from "../../images/card-images/graphic-design-logo.png";
-import MaintLogo from "../../images/card-images/maintenance-logo.png";
+import HostLogo from "../../../images/card-images/hosting-logo.png";
+import WebDLogo from "../../../images/card-images/web-development-logo.png";
+import AppDLogo from "../../../images/card-images/app-development-logo.png";
+import EcLogo from "../../../images/card-images/ecommerce-logo.png";
+import GraphLogo from "../../../images/card-images/graphic-design-logo.png";
+import MaintLogo from "../../../images/card-images/maintenance-logo.png";
+import { Link } from "gatsby";
 
 const Card = styled.div`
   width: 400px;
@@ -91,6 +92,7 @@ const Services = () => {
       <Container className="services-con">
         <Row>
           <Col className="services-col">
+            <Link to="/web-design/" style={{textDecoration:'none', color:'#454040'}}>
             <Card>
               <img src={MaintLogo} className="card-image" alt="Web Design"></img>
               <SubContainer>
@@ -101,6 +103,7 @@ const Services = () => {
                 </SubText>
               </SubContainer>
             </Card>
+            </Link>
           </Col>
           <Col className="services-col">
             <Card>

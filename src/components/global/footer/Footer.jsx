@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../images/Flame_logo_white.png";
+import logo from "../../../images/Flame_logo_white.png";
 import { Col, Container, FooterContainer, Heading, Row } from "../theme/Theme";
 import './footer.css';
 

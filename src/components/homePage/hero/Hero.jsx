@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Container, Row, Col } from "../theme/Theme";
-import bubbles from "../../images/purple-bubbles-hd.png";
+import { Container, Row, Col } from "../../global/theme/Theme";
+import bubbles from "../../../images/purple-bubbles-hd.png";
 import styled from "styled-components";
 import { ThemeContext } from "styled-components";
 import "./hero.css";

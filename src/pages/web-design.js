@@ -4,22 +4,18 @@ import { ThemeProvider } from "styled-components";
 import theme from "../components/global/theme/Theme";
 import { Header } from "../components/global/header/Header";
 import Footer from "../components/global/footer/Footer";
-import Hero from "../components/homePage/hero/Hero";
-import Services from "../components/homePage/services/Services";
-import FadeInAnimation from "../assets/js/FadeInAnimation";
+import WebDesignHero from "../components/webDesignPage/webDesignHero/WebDesignHero";
+
 
 // markup
-const IndexPage = () => {
+const WebDesignPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header></Header>
-      <Hero></Hero>
-      <FadeInAnimation>
-        <Services></Services>
-      </FadeInAnimation>
+      <WebDesignHero></WebDesignHero>
       <Footer></Footer>
     </ThemeProvider>
   );
 };
 
-export default IndexPage;
+export default WebDesignPage;
