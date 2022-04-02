@@ -66,7 +66,7 @@ const ServiceDetails = () => {
       </Container>
 
       <Container className="service-detail-container">
-        <Row>
+        <Row className="service-detail-row">
           <Col className="service-detail-column">
             <TitleContainer>
               <Title>Great Speed and Performance</Title>
@@ -91,7 +91,7 @@ const ServiceDetails = () => {
       </Container>
 
       <Container className="service-detail-container">
-        <Row>
+        <Row className="service-detail-row">
           <Col className="service-detail-column">
             <img
               className="service-site-photo"
