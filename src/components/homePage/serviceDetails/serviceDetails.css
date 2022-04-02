@@ -1,0 +1,18 @@
+.service-detail-container{
+   align-items: center;
+    padding-top:150px;
+}
+
+.service-detail-row{
+    display:flex;
+    align-items:center;
+}
+
+.service-detail-column {
+  width:50% !important;
+}
+
+.service-site-photo {
+    object-fit: cover;
+    transform:rotate3d(1,1,1,-10deg);
+}
