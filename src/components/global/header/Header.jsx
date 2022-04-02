@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { Container, Nav, Ul, Row, Col  } from "../theme/Theme";
+import { Container, Nav, Ul, Row, Col } from "../theme/Theme";
 import logo from "../../../images/Flame_logo_white.png";
 import HandleMediaQuery from "../../handleMediaQuery/HandleMediaQuery";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -13,6 +13,15 @@ const Li = styled.li`
   list-style-type: none;
   font-family: ${(props) => props.theme.fonts.body};
   color: ${(props) => props.theme.colors.text};
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  color: white;
+  :hover {
+    color: black;
+  }
 `;
 
 const MobileMenu = styled.div`
@@ -48,16 +57,24 @@ export const Header = (props) => {
       <Row style={mobileScreen ? { alignItems: "flex-end" } : {}}>
         <Nav style={mobileScreen ? { display: "none" } : {}}>
           <Ul>
-            <Li>Home</Li>
-            <Li>About us</Li>
+            <Li>
+              <Link href="/">Home</Link>
+            </Li>
+            <Li>
+              <Link href="/about">About us</Link>
+            </Li>
             <img
               src={logo}
               width={50}
               height={"auto"}
               alt="Emberwind studios logo"
             ></img>
-            <Li>Services</Li>
-            <Li>Contact us</Li>
+            <Li>
+              <Link href="/services">Services</Link>
+            </Li>
+            <Li>
+              <Link href="/contact">Contact Us</Link>
+            </Li>
           </Ul>
         </Nav>
         <Col
