@@ -6,11 +6,11 @@
 .service-detail-row{
     display:flex;
     align-items:center;
-    width:90% !important;
+    width:70% !important;
 }
 
 .service-detail-column {
-  width:50% !important;
+  width:60% !important;
 }
 
 .service-site-photo {

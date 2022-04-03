@@ -1,0 +1,15 @@
+.justin-pfp {
+  width: 350px;
+  height: 350px;
+}
+
+.text-col {
+  width: 30%;
+  align-items: center;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+}
