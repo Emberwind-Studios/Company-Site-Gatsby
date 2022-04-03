@@ -1,15 +1,16 @@
 .pfp {
-  width: 350px;
+  width: 350px !important;
   height: 350px;
 }
 
 .text-col {
-  width: 30%;
+  width: 30% !important;
   align-items: center;
+  padding-left: 80px;
 }
 
 .about-row {
   display: flex;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 150px !important;
 }

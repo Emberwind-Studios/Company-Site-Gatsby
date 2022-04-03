@@ -5,15 +5,49 @@ import "./about.css";
 import justinpfp from "../../../images/pfp-images/justin-pfp.png";
 import kalebpfp from "../../../images/pfp-images/kaleb-pfp.png";
 
+const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Title = styled.h1`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: ${(props) => props.theme.fonts.heading};
+  color: ${(props) => props.theme.colors.heading};
+  font-weight: 600;
+  text-align: center;
+  padding-top: 200px;
+  width: 100%;
+`;
+
+const Underline = styled.hr`
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid;
+  color:${(props) => props.theme.colors.primary};
+  width: 150px;
+  padding-top: 2%;
+`;
+
 const TitleText = styled.p`
-  padding-top: 4%;
-  font-family: ${(props) => props.theme.fonts.body};
-  font-size: ${(props) => props.theme.fontSizes[3] + "px"};
+  padding-top:4%;
+  font-family:${(props) => props.theme.fonts.body};
+  font-size: ${(props) => props.theme.fontSizes[3]+ "px"};
 `;
 
 const About = () => {
   return (
     <>
+    <TitleContainer>
+        <Title>About Us</Title>
+        <Underline></Underline>
+        <TitleText>We provide the highest level of quality and performance for all of our software designs!</TitleText>
+      </TitleContainer>
+
       <Container>
         <Row className="about-row">
           <Col>
