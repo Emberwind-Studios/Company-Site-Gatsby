@@ -3,6 +3,7 @@ import { Container, Row, Col } from "../../global/theme/Theme";
 import styled from "styled-components";
 import "./about.css";
 import justinpfp from "../../../images/pfp-images/justin-pfp.png";
+import kalebpfp from "../../../images/pfp-images/kaleb-pfp.png";
 
 const TitleText = styled.p`
   padding-top: 4%;
@@ -16,7 +17,7 @@ const About = () => {
       <Container>
         <Row className="about-row">
           <Col>
-            <img src={justinpfp} className="justin-pfp"></img>
+            <img src={kalebpfp} className="pfp"></img>
           </Col>
           <Col className="text-col">
             <TitleText>
@@ -32,7 +33,7 @@ const About = () => {
       <Container>
         <Row className="about-row">
           <Col>
-            <img src={justinpfp} className="justin-pfp"></img>
+            <img src={justinpfp} className="pfp"></img>
           </Col>
           <Col className="text-col">
             <TitleText>
