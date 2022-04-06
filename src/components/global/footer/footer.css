@@ -1,6 +1,10 @@
+.footer-container {
+    width:100%;
+}
+
 .footer-col {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100% !important;
+    width:100%;
 }

@@ -37,8 +37,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 `;
 
 export const Row = styled.div`
@@ -46,8 +44,6 @@ export const Row = styled.div`
   justify-content: center;
   flex-direction: row;
   padding: 1%;
-  width: 100%;
-  height: 100%;
   @media (max-width: 1200px) {
     flex-direction: column;
   }

@@ -66,7 +66,7 @@ const Hero = () => {
               width={"100%"}
               height={"auto"}
               style={{ objectFit: "cover" }}
-              alt="Bubbles "
+              alt="Bubbles"
             ></img>
           </Col>
           <Col

@@ -13,7 +13,7 @@ const Footerli = styled.li`
 const Footer = () => {
   return (
     <FooterContainer>
-      <Container>
+      <Container className="footer-container">
         <Row>
           <Col className="footer-col">
             <img

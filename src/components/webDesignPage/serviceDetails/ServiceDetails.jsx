@@ -1,14 +1,34 @@
 import React from "react";
 import { Container, Row, Col } from "../../global/theme/Theme";
-import bubbles from "../../../images/site-images/performing-center-stage.png";
+import siteImage from "../../../images/site-images/performing-center-stage.png";
 import styled from "styled-components";
 import "./serviceDetails.css";
+import FadeInAnimation from "../../../assets/js/FadeInAnimation";
+
+const MainTitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top:10%;
+`;
 
 const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+`;
+
+const MainTitle = styled.h1`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: ${(props) => props.theme.fonts.heading};
+  color: ${(props) => props.theme.colors.heading};
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
 `;
 
 const Title = styled.h1`
@@ -22,6 +42,15 @@ const Title = styled.h1`
   width: 100%;
 `;
 
+const MainUnderline = styled.hr`
+  display: flex;
+  border-bottom: 4px solid;
+  color: ${(props) => props.theme.colors.primary};
+  width: 150px;
+  align-self: center;
+  padding-top: 2%;
+`;
+
 const Underline = styled.hr`
   display: flex;
   border-bottom: 4px solid;
@@ -33,6 +62,7 @@ const Underline = styled.hr`
 
 const TitleText = styled.p`
   padding-top: 4%;
+  line-height:30px;
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
 `;
@@ -40,14 +70,17 @@ const TitleText = styled.p`
 const ServiceDetails = () => {
   return (
     <>
+    <FadeInAnimation>
+    <MainTitleContainer>
+        <MainTitle>Features & Benefits</MainTitle>
+        <MainUnderline></MainUnderline>
+      </MainTitleContainer>
       <Container className="service-detail-container">
         <Row className="service-detail-row">
           <Col className="service-detail-column">
             <img
               className="service-site-photo"
-              src={bubbles}
-              width={"100%"}
-              height={"auto"}
+              src={siteImage}
               alt="Performing Center Stage"
             ></img>
           </Col>
@@ -64,40 +97,40 @@ const ServiceDetails = () => {
           </Col>
         </Row>
       </Container>
+      </FadeInAnimation>
 
+      <FadeInAnimation>
       <Container className="service-detail-container">
         <Row className="service-detail-row">
           <Col className="service-detail-column">
-            <TitleContainer>
-              <Title>Great Speed and Performance</Title>
+          <TitleContainer>
+              <Title>Custom Website Designs</Title>
               <Underline></Underline>
               <TitleText>
-                Your site will be optimized to perform great and be able to
-                handle a large amount of traffic. We also provide security, and
-                backups for your store to give you peace of mind.
+                Your website will feature a custom design, and unique features
+                to give your site a personal feel and look. We want to keep
+                customers engaged while giving them a great user experience!
               </TitleText>
             </TitleContainer>
           </Col>
           <Col className="service-detail-column">
             <img
               className="service-site-photo"
-              src={bubbles}
-              width={"100%"}
-              height={"auto"}
+              src={siteImage}
               alt="Performing Center Stage"
             ></img>
           </Col>
         </Row>
       </Container>
+      </FadeInAnimation>
 
+      <FadeInAnimation>
       <Container className="service-detail-container">
         <Row className="service-detail-row">
           <Col className="service-detail-column">
             <img
               className="service-site-photo"
-              src={bubbles}
-              width={"100%"}
-              height={"auto"}
+              src={siteImage}
               alt="Performing Center Stage"
             ></img>
           </Col>
@@ -114,6 +147,7 @@ const ServiceDetails = () => {
           </Col>
         </Row>
       </Container>
+      </FadeInAnimation>
     </>
   );
 };

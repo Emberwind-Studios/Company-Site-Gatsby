@@ -1,0 +1,25 @@
+.service-detail-container{
+   align-content: center;
+    padding-top:50px;
+}
+
+.service-detail-row{
+    display:flex;
+    align-items:center;
+    width:100%;
+    margin-bottom:5%;
+    align-items:center;
+}
+
+.service-detail-column {
+    margin-bottom:1%;
+    padding:3%
+}
+
+.service-site-photo {
+    object-fit: cover;
+    border-radius:5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width:100%;
+    height:auto;
+}
