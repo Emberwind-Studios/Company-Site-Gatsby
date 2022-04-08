@@ -134,7 +134,7 @@ const Services = () => {
         </Row>
       </Container>
 
-      <Container className="services-con">
+      <Container className="services-con2">
         <Row>
           <Col className="services-col">
             <Card>
