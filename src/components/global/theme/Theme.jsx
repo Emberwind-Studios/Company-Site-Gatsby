@@ -5,12 +5,12 @@ import "@fontsource/actor"
 
 const theme = {
   colors: {
-    text: "#fff",
-    background: "#fff",
-    primary: "#526492",
+    text: "#ffffff",
+    background: "#000E32",
+    primary: "#2C4A97",
     secondary: "#ff6347",
-    heading: "#454040",
-    success: "#7A93D2",
+    heading: "#ffffff",
+    success: "#308FA4",
     footer: "#36454F",
   },
   fonts: {

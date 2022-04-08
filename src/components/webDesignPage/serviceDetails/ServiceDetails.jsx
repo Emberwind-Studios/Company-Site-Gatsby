@@ -10,7 +10,7 @@ const MainTitleContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top:10%;
+  padding-top: 20%;
 `;
 
 const TitleContainer = styled.div`
@@ -62,91 +62,92 @@ const Underline = styled.hr`
 
 const TitleText = styled.p`
   padding-top: 4%;
-  line-height:30px;
+  line-height: 30px;
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
+  color: #ffffff;
 `;
 
 const ServiceDetails = () => {
   return (
     <>
-    <FadeInAnimation>
-    <MainTitleContainer>
-        <MainTitle>Features & Benefits</MainTitle>
-        <MainUnderline></MainUnderline>
-      </MainTitleContainer>
-      <Container className="service-detail-container">
-        <Row className="service-detail-row">
-          <Col className="service-detail-column">
-            <img
-              className="service-site-photo"
-              src={siteImage}
-              alt="Performing Center Stage"
-            ></img>
-          </Col>
-          <Col className="service-detail-column">
-            <TitleContainer>
-              <Title>Custom Website Designs</Title>
-              <Underline></Underline>
-              <TitleText>
-                Your website will feature a custom design, and unique features
-                to give your site a personal feel and look. We want to keep
-                customers engaged while giving them a great user experience!
-              </TitleText>
-            </TitleContainer>
-          </Col>
-        </Row>
-      </Container>
+      <FadeInAnimation>
+        <MainTitleContainer>
+          <MainTitle>Features & Benefits</MainTitle>
+          <MainUnderline></MainUnderline>
+        </MainTitleContainer>
+        <Container className="service-detail-container">
+          <Row className="service-detail-row">
+            <Col className="service-detail-column">
+              <TitleContainer>
+                <Title>Custom Website Designs</Title>
+                <Underline></Underline>
+                <TitleText>
+                  Your website will feature a custom design, and unique features
+                  to give your site a personal feel and look. We want to keep
+                  customers engaged while giving them a great user experience!
+                </TitleText>
+              </TitleContainer>
+            </Col>
+            <Col className="service-detail-column">
+              <img
+                className="service-site-photo"
+                src={siteImage}
+                alt="Performing Center Stage"
+              ></img>
+            </Col>
+          </Row>
+        </Container>
       </FadeInAnimation>
 
       <FadeInAnimation>
-      <Container className="service-detail-container">
-        <Row className="service-detail-row">
-          <Col className="service-detail-column">
-          <TitleContainer>
-              <Title>Custom Website Designs</Title>
-              <Underline></Underline>
-              <TitleText>
-                Your website will feature a custom design, and unique features
-                to give your site a personal feel and look. We want to keep
-                customers engaged while giving them a great user experience!
-              </TitleText>
-            </TitleContainer>
-          </Col>
-          <Col className="service-detail-column">
-            <img
-              className="service-site-photo"
-              src={siteImage}
-              alt="Performing Center Stage"
-            ></img>
-          </Col>
-        </Row>
-      </Container>
+        <Container className="service-detail-container">
+          <Row className="service-detail-row">
+            <Col className="service-detail-column">
+              <img
+                className="service-site-photo"
+                src={siteImage}
+                alt="Performing Center Stage"
+              ></img>
+            </Col>
+            <Col className="service-detail-column">
+              <TitleContainer>
+                <Title>Custom Website Designs</Title>
+                <Underline></Underline>
+                <TitleText>
+                  Your website will feature a custom design, and unique features
+                  to give your site a personal feel and look. We want to keep
+                  customers engaged while giving them a great user experience!
+                </TitleText>
+              </TitleContainer>
+            </Col>
+          </Row>
+        </Container>
       </FadeInAnimation>
 
       <FadeInAnimation>
-      <Container className="service-detail-container">
-        <Row className="service-detail-row">
-          <Col className="service-detail-column">
-            <img
-              className="service-site-photo"
-              src={siteImage}
-              alt="Performing Center Stage"
-            ></img>
-          </Col>
-          <Col className="service-detail-column">
-            <TitleContainer>
-              <Title>Custom Website Designs</Title>
-              <Underline></Underline>
-              <TitleText>
-                Your website will feature a custom design, and unique features
-                to give your site a personal feel and look. We want to keep
-                customers engaged while giving them a great user experience!
-              </TitleText>
-            </TitleContainer>
-          </Col>
-        </Row>
-      </Container>
+        <Container className="service-detail-container">
+          <Row className="service-detail-row">
+            <Col className="service-detail-column">
+              <TitleContainer>
+                <Title>Custom Website Designs</Title>
+                <Underline></Underline>
+                <TitleText>
+                  Your website will feature a custom design, and unique features
+                  to give your site a personal feel and look. We want to keep
+                  customers engaged while giving them a great user experience!
+                </TitleText>
+              </TitleContainer>
+            </Col>
+            <Col className="service-detail-column">
+              <img
+                className="service-site-photo"
+                src={siteImage}
+                alt="Performing Center Stage"
+              ></img>
+            </Col>
+          </Row>
+        </Container>
       </FadeInAnimation>
     </>
   );

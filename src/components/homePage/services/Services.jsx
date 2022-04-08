@@ -2,18 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "../../global/theme/Theme";
 import styled from "styled-components";
 import "./services.css";
-import HostLogo from "../../../images/card-images/hosting-logo.png";
-import WebDLogo from "../../../images/card-images/web-development-logo.png";
-import AppDLogo from "../../../images/card-images/app-development-logo.png";
-import EcLogo from "../../../images/card-images/ecommerce-logo.png";
-import GraphLogo from "../../../images/card-images/graphic-design-logo.png";
-import MaintLogo from "../../../images/card-images/maintenance-logo.png";
+import HostLogoDark from "../../../images/dark-card-images/hosting-dark.png";
+import WebDLogoDark from "../../../images/dark-card-images/web-development-dark.png";
+import AppDLogoDark from "../../../images/dark-card-images/app-development-dark.png";
+import EcLogoDark from "../../../images/dark-card-images/ecommerce-dark.png";
+import GraphLogoDark from "../../../images/dark-card-images/graphic-design-dark.png";
+import MaintLogoDark from "../../../images/dark-card-images/maintenance-dark.png";
 import { Link } from "gatsby";
 
 const Card = styled.div`
   width: 400px;
   height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.491) 0px 10px 15px;
   cursor: pointer;
   transition: 0.2s;
 
@@ -45,6 +45,7 @@ const SubText = styled.p`
   font-weight: 300;
   margin-top: 5%;
   letter-spacing: 0em;
+  color: #ffffff;
 `;
 
 const TitleContainer = styled.div`
@@ -79,6 +80,7 @@ const TitleText = styled.p`
   padding-top:4%;
   font-family:${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3]+ "px"};
+  color: #ffffff;
 `;
 
 const Services = () => {
@@ -94,7 +96,7 @@ const Services = () => {
           <Col className="services-col">
             <Link to="/web-design/" style={{textDecoration:'none', color:'#454040'}}>
             <Card>
-              <img src={MaintLogo} className="card-image" alt="Web Design"></img>
+              <img src={MaintLogoDark} className="card-image" alt="Web Design"></img>
               <SubContainer>
                 <Heading>Web Design</Heading>
                 <SubText>
@@ -107,7 +109,7 @@ const Services = () => {
           </Col>
           <Col className="services-col">
             <Card>
-              <img src={AppDLogo} className="card-image" alt="App Development"></img>
+              <img src={AppDLogoDark} className="card-image" alt="App Development"></img>
               <SubContainer>
                 <Heading>App Development</Heading>
                 <SubText>
@@ -119,7 +121,7 @@ const Services = () => {
           </Col>
           <Col className="services-col">
             <Card>
-              <img src={EcLogo} className="card-image" alt="Eccomerce"></img>
+              <img src={EcLogoDark} className="card-image" alt="Eccomerce"></img>
               <SubContainer>
                 <Heading>Eccomerce</Heading>
                 <SubText>
@@ -136,7 +138,7 @@ const Services = () => {
         <Row>
           <Col className="services-col">
             <Card>
-              <img src={GraphLogo} className="card-image" alt="Graphic Design"></img>
+              <img src={GraphLogoDark} className="card-image" alt="Graphic Design"></img>
               <SubContainer>
                 <Heading>Graphic Design</Heading>
                 <SubText>
@@ -148,7 +150,7 @@ const Services = () => {
           </Col>
           <Col className="services-col">
             <Card>
-              <img src={HostLogo} className="card-image" alt="Hosting"></img>
+              <img src={HostLogoDark} className="card-image" alt="Hosting"></img>
               <SubContainer>
                 <Heading>Hosting</Heading>
                 <SubText>
@@ -160,7 +162,7 @@ const Services = () => {
           </Col>
           <Col className="services-col">
             <Card>
-              <img src={WebDLogo} className="card-image" alt=" Site Maintenance"></img>
+              <img src={WebDLogoDark} className="card-image" alt=" Site Maintenance"></img>
               <SubContainer>
                 <Heading>Site Maintenance</Heading>
                 <SubText>

@@ -8,6 +8,7 @@ import Hero from "../components/homePage/hero/Hero";
 import Services from "../components/homePage/services/Services";
 import FadeInAnimation from "../assets/js/FadeInAnimation";
 import ServiceDetails from "../components/webDesignPage/serviceDetails/ServiceDetails";
+import About from "../components/homePage/aboutUs/About";
 
 // markup
 const IndexPage = () => {
@@ -18,7 +19,12 @@ const IndexPage = () => {
       <FadeInAnimation>
         <Services></Services>
       </FadeInAnimation>
+      <FadeInAnimation>
+        <About></About>
+        </FadeInAnimation>
+        <FadeInAnimation>
         <ServiceDetails></ServiceDetails>
+        </FadeInAnimation>
       <Footer></Footer>
     </ThemeProvider>
   );
