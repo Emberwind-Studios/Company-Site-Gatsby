@@ -16,6 +16,7 @@ const Card = styled.div`
   box-shadow: rgba(0, 0, 0, 0.491) 0px 10px 15px;
   cursor: pointer;
   transition: 0.2s;
+  background-color: #1a1834;
 
   :hover {
     transition: 0.2s;
