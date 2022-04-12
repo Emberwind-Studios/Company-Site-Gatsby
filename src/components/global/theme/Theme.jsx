@@ -6,8 +6,8 @@ import "@fontsource/actor"
 const theme = {
   colors: {
     text: "#ffffff",
-    background: "#000000",
-    primary: "#2C4A97",
+    background: "##1d1d1d",
+    primary: "#409e9e",
     secondary: "#ff6347",
     heading: "#ffffff",
     success: "#308FA4",

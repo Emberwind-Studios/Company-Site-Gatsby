@@ -20,10 +20,10 @@ const IndexPage = () => {
         <Services></Services>
       </FadeInAnimation>
       <FadeInAnimation>
-        <About></About>
+      <ServiceDetails></ServiceDetails>
         </FadeInAnimation>
         <FadeInAnimation>
-        <ServiceDetails></ServiceDetails>
+        <About></About>
         </FadeInAnimation>
       <Footer></Footer>
     </ThemeProvider>

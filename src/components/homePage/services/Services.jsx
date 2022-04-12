@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "../../global/theme/Theme";
 import styled from "styled-components";
 import "./services.css";
-import HostLogoDark from "../../../images/dark-card-images/hosting-dark.png";
-import WebDLogoDark from "../../../images/dark-card-images/web-development-dark.png";
-import AppDLogoDark from "../../../images/dark-card-images/app-development-dark.png";
-import EcLogoDark from "../../../images/dark-card-images/ecommerce-dark.png";
-import GraphLogoDark from "../../../images/dark-card-images/graphic-design-dark.png";
-import MaintLogoDark from "../../../images/dark-card-images/maintenance-dark.png";
+import HostLogoBlue from "../../../images/neon-card-images/hosting-blue.png";
+import WebDLogoRed from "../../../images/neon-card-images/web-design-red.png";
+import AppDLogoPurp from "../../../images/neon-card-images/app-development-purple.png";
+import EcLogoLightBlue from "../../../images/neon-card-images/ecommerce-light-blue.png";
+import GraphLogoGreen from "../../../images/neon-card-images/graphic-design-green.png";
+import MaintLogoTan from "../../../images/neon-card-images/maint-tan.png";
 import { Link } from "gatsby";
 
 const Card = styled.div`
@@ -16,13 +16,15 @@ const Card = styled.div`
   box-shadow: rgba(0, 0, 0, 0.491) 0px 10px 15px;
   cursor: pointer;
   transition: 0.2s;
-  background-color: #1a1834;
+  background-color: #262626;
+  border-radius: 5px;
 
   :hover {
     transition: 0.2s;
     transform: translateY(-15px);
   }
 `;
+
 
 const SubContainer = styled.div`
   margin-left: 10%;
@@ -97,7 +99,7 @@ const Services = () => {
           <Col className="services-col">
             <Link to="/web-design/" style={{textDecoration:'none', color:'#454040'}}>
             <Card>
-              <img src={MaintLogoDark} className="card-image" alt="Web Design"></img>
+              <img src={WebDLogoRed} className="card-image" alt="Web Design"></img>
               <SubContainer>
                 <Heading>Web Design</Heading>
                 <SubText>
@@ -109,10 +111,10 @@ const Services = () => {
             </Link>
           </Col>
           <Col className="services-col">
-            <Card>
-              <img src={AppDLogoDark} className="card-image" alt="App Development"></img>
+          <Card>
+              <img src={EcLogoLightBlue} className="card-image" alt="Eccomerce"></img>
               <SubContainer>
-                <Heading>App Development</Heading>
+                <Heading>Eccomerce</Heading>
                 <SubText>
                   All of our plans are tailored to meet your business goals and
                   ambitions.
@@ -121,10 +123,10 @@ const Services = () => {
             </Card>
           </Col>
           <Col className="services-col">
-            <Card>
-              <img src={EcLogoDark} className="card-image" alt="Eccomerce"></img>
+          <Card>
+            <img src={MaintLogoTan} className="card-image" alt=" Site Maintenance"></img>
               <SubContainer>
-                <Heading>Eccomerce</Heading>
+                <Heading>Site Maintenance</Heading>
                 <SubText>
                   All of our plans are tailored to meet your business goals and
                   ambitions.
@@ -139,7 +141,7 @@ const Services = () => {
         <Row>
           <Col className="services-col">
             <Card>
-              <img src={GraphLogoDark} className="card-image" alt="Graphic Design"></img>
+              <img src={GraphLogoGreen} className="card-image" alt="Graphic Design"></img>
               <SubContainer>
                 <Heading>Graphic Design</Heading>
                 <SubText>
@@ -151,7 +153,7 @@ const Services = () => {
           </Col>
           <Col className="services-col">
             <Card>
-              <img src={HostLogoDark} className="card-image" alt="Hosting"></img>
+              <img src={HostLogoBlue} className="card-image" alt="Hosting"></img>
               <SubContainer>
                 <Heading>Hosting</Heading>
                 <SubText>
@@ -163,9 +165,10 @@ const Services = () => {
           </Col>
           <Col className="services-col">
             <Card>
-              <img src={WebDLogoDark} className="card-image" alt=" Site Maintenance"></img>
+            <img src={AppDLogoPurp} className="card-image" alt="App Development"></img>
+              
               <SubContainer>
-                <Heading>Site Maintenance</Heading>
+                <Heading>App Development</Heading>
                 <SubText>
                   All of our plans are tailored to meet your business goals and
                   ambitions.
@@ -175,6 +178,7 @@ const Services = () => {
           </Col>
         </Row>
       </Container>
+      
     </>
   );
 };
