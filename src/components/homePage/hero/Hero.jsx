@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Container, Row, Col } from "../../global/theme/Theme";
-import bubbles from "../../../images/darkbubbles.png";
+import bubbles from "../../../images/purple-bubbles-hd.png";
 import styled from "styled-components";
 import { ThemeContext } from "styled-components";
 import "./hero.css";
@@ -14,7 +14,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #000E32;
+  background-color: #ffffff;
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
   padding: 15px;
   height: auto;
@@ -39,7 +39,7 @@ const Button = styled.button`
 const Title = styled.h2`
   font-family: ${(props) => props.theme.fonts.heading};
   text-align: center;
-  font-weight:100;
+  font-weight: 100;
   font-size: ${(props) => props.theme.fontSizes[6] + "px"};
   color: ${(props) => props.theme.colors.heading};
 `;
@@ -51,7 +51,7 @@ const SubText = styled.p`
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
   width: 70%;
-  color:#ffffff;
+  color: #030303;
 `;
 
 const Hero = () => {
@@ -59,7 +59,7 @@ const Hero = () => {
 
   return (
     <>
-      <Container className="hero-container">
+      <Container>
         <Row syle={{ width: "100%;" }}>
           <Col>
             <img
