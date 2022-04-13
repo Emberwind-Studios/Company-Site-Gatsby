@@ -13,11 +13,10 @@ import { Link } from "gatsby";
 const Card = styled.div`
   width: 400px;
   height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.491) 0px 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.491) 0px 5px 10px;
   cursor: pointer;
   transition: 0.2s;
-  background-color: #262626;
-  border-radius: 5px;
+  background-color: #ffffff;
 
   :hover {
     transition: 0.2s;
@@ -48,7 +47,7 @@ const SubText = styled.p`
   font-weight: 300;
   margin-top: 5%;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: #000000;
 `;
 
 const TitleContainer = styled.div`
@@ -83,7 +82,7 @@ const TitleText = styled.p`
   padding-top:4%;
   font-family:${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3]+ "px"};
-  color: #ffffff;
+  color: #000000;
 `;
 
 const Services = () => {

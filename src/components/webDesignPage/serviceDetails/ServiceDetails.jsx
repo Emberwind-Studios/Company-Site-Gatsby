@@ -65,7 +65,7 @@ const TitleText = styled.p`
   line-height: 30px;
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
-  color: #ffffff;
+  color: #000000;
 `;
 
 const ServiceDetails = () => {

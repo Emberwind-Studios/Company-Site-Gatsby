@@ -7,11 +7,11 @@ const theme = {
   colors: {
     text: "#ffffff",
     background: "##1d1d1d",
-    primary: "#409e9e",
+    primary: "#4f499f",
     secondary: "#ff6347",
-    heading: "#ffffff",
+    heading: "#0d0d0d",
     success: "#308FA4",
-    footer: "#36454F",
+    footer: "#2d2873",
   },
   fonts: {
     body: "Poppins, sans-serif",
