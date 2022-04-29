@@ -28,7 +28,7 @@ const Underline = styled.hr`
   display: flex;
   justify-content: center;
   border-bottom: 4px solid;
-  color: ${(props) => props.theme.colors.primary};
+  color: #4F499F;
   width: 150px;
   padding-top: 2%;
 `;
@@ -37,7 +37,7 @@ const TitleText = styled.p`
   padding-top: 4%;
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
-  color: #000000;
+  color: #ffffff;
 `;
 
 const PfpHover = styled.div`

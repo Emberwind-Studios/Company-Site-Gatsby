@@ -45,7 +45,7 @@ const Title = styled.h1`
 const MainUnderline = styled.hr`
   display: flex;
   border-bottom: 4px solid;
-  color: ${(props) => props.theme.colors.primary};
+  color: #4F499F;
   width: 150px;
   align-self: center;
   padding-top: 2%;

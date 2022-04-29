@@ -16,7 +16,7 @@ const Card = styled.div`
   box-shadow: rgba(0, 0, 0, 0.491) 0px 5px 10px;
   cursor: pointer;
   transition: 0.2s;
-  background-color: #ffffff;
+  background-color: #141414;
 
   :hover {
     transition: 0.2s;
@@ -47,7 +47,7 @@ const SubText = styled.p`
   font-weight: 300;
   margin-top: 5%;
   letter-spacing: 0em;
-  color: #000000;
+  color: #ffffff;
 `;
 
 const TitleContainer = styled.div`
@@ -73,7 +73,7 @@ const Underline = styled.hr`
   display: flex;
   justify-content: center;
   border-bottom: 4px solid;
-  color:${(props) => props.theme.colors.primary};
+  color: #4F499F;
   width: 150px;
   padding-top: 2%;
 `;
@@ -82,7 +82,7 @@ const TitleText = styled.p`
   padding-top:4%;
   font-family:${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3]+ "px"};
-  color: #000000;
+  color: #ffffff;
 `;
 
 const Services = () => {
