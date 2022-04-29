@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Container, Row, Col } from "../../global/theme/Theme";
-import bubbles from "../../../images/purple-bubbles-hd.png";
+import bubbles from "../../../images/bubbles-purple-dark.png";
 import styled from "styled-components";
 import { ThemeContext } from "styled-components";
 import "./hero.css";
@@ -14,7 +14,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #ffffff;
+  background-color: #4F499F;
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
   padding: 15px;
   height: auto;
@@ -51,7 +51,7 @@ const SubText = styled.p`
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes[3] + "px"};
   width: 70%;
-  color: #030303;
+  color: #ffffff;
 `;
 
 const Hero = () => {

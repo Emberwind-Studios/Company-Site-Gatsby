@@ -6,12 +6,12 @@ import "@fontsource/actor"
 const theme = {
   colors: {
     text: "#ffffff",
-    background: "##1d1d1d",
-    primary: "#4f499f",
+    background: "##000032",
+    primary: "#141414",
     secondary: "#ff6347",
-    heading: "#0d0d0d",
+    heading: "#ffffff",
     success: "#308FA4",
-    footer: "#2d2873",
+    footer: "#4f499f",
   },
   fonts: {
     body: "Poppins, sans-serif",
